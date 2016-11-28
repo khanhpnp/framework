@@ -31,6 +31,7 @@ import android.support.design.widget.BottomSheetDialog;
 import android.util.Log;
 
 import com.odoo.App;
+import com.odoo.core.orm.OModel;
 import com.odoo.core.orm.OSQLite;
 import com.odoo.core.support.OUser;
 import com.odoo.core.utils.OPreferenceManager;
@@ -125,18 +126,31 @@ public class OdooAccountManager {
         if (user != null) {
             AccountManager accountManager = AccountManager.get(context);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
-                return accountManager.removeAccountExplicitly(user.getAccount());
+                if (accountManager.removeAccountExplicitly(user.getAccount())) {
+                    dropDatabase(context, user);
+                }
+                return true;
             } else {
                 try {
                     AccountManagerFuture<Boolean> result = accountManager.
                             removeAccount(user.getAccount(), null, null);
-                    return result.getResult();
+                    if (result.getResult()) {
+                        dropDatabase(context, user);
+                    }
+                    return true;
                 } catch (OperationCanceledException | IOException | AuthenticatorException e) {
                     e.printStackTrace();
                 }
             }
         }
         return false;
+    }
+
+    public static void dropDatabase(Context context, OUser user) {
+        OModel model = new OModel(context, null, user);
+        model.dropDatabase();
+        App app = (App) context.getApplicationContext();
+        app.setOdoo(null, user);
     }
 
     public static OUser updateUserData(Context context, OUser user, OUser newData) {

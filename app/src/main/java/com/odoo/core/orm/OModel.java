@@ -1195,4 +1195,10 @@ public class OModel implements ISyncServiceListener {
     public SyncUtils sync() {
         return SyncUtils.get(mContext);
     }
+
+    public void dropDatabase() {
+        sqLite.dropDatabase();
+        sqLite.close();
+        sqLite = null;
+    }
 }
