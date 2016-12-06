@@ -5,7 +5,7 @@
         <shape>
             <solid android:color="@color/theme_primary_medium" />
 
-            <corners android:radius="2dp" />
+            <corners android:radius="5dp" />
         </shape>
     </item>
 

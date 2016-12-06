@@ -26,7 +26,6 @@
 
     <color name="control_pressed">#acacac</color>
 
-
     <array name="letter_tile_colors">
         <item>@color/android_blue</item>
         <item>@color/android_violet_dark</item>
@@ -47,4 +46,8 @@
     <color name="translucent_scrim_top_center">#0C000000</color>
     <color name="translucent_scrim_bottom">#2A000000</color>
     <color name="translucent_scrim_bottom_center">#0D000000</color>
+
+    <!-- MY COLOR APP-->
+    <color name="myapp_theme_primary">#d1dee0</color>
+    <color name="window_background">#FFF5F5F5</color>
 </resources>

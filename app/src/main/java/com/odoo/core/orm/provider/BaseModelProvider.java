@@ -77,6 +77,7 @@ public class BaseModelProvider extends ContentProvider {
     public OModel getModel(Uri uri) {
         String path = uri.getQueryParameter(KEY_MODEL);
         String username = uri.getQueryParameter(KEY_USERNAME);
+        //String password = uri.getQueryParameter();
         return OModel.get(getContext(), path, username);
     }
 
@@ -89,9 +90,9 @@ public class BaseModelProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] base_projection, String selection, String[] selectionArgs, String sortOrder) {
         OModel model = getModel(uri);
-        setMatcher(model, uri);
         if (model == null)
             return null;
+        setMatcher(model, uri);
         String[] projection = removeRelationColumns(model, base_projection);
         int match = matcher.match(uri);
         SQLiteQueryBuilder builder = new SQLiteQueryBuilder();

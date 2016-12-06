@@ -109,20 +109,20 @@ public class OdooActivity extends OdooCompatActivity {
 
     private void startApp(Bundle savedInstanceState) {
         OPreferenceManager preferenceManager = new OPreferenceManager(this);
-        if (!preferenceManager.getBoolean(KEY_FRESH_LOGIN, false)) {
-            preferenceManager.setBoolean(KEY_FRESH_LOGIN, true);
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    startActivity(new Intent(OdooActivity.this, AppIntro.class));
-                }
-            }, 1000);
-        }
+//        if (!preferenceManager.getBoolean(KEY_FRESH_LOGIN, false)) {
+//            preferenceManager.setBoolean(KEY_FRESH_LOGIN, true);
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    startActivity(new Intent(OdooActivity.this, AppIntro.class));
+//                }
+//            }, 1000);
+//        }
         setContentView(R.layout.odoo_activity);
         OAppBarUtils.setAppBar(this, true);
         setupDrawer();
         // Validating user object
-        validateUserObject();
+       // validateUserObject();
     }
 
     private void validateUserObject() {
@@ -182,8 +182,8 @@ public class OdooActivity extends OdooCompatActivity {
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         mDrawerToggle.syncState();
 
-        setupAccountBox();
-        setupDrawerBox();
+        //setupAccountBox();
+        //setupDrawerBox();
     }
 
     private void setupDrawerBox() {
