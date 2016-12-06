@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="35dip"
-android:layout_margin="5dip"
-android:orientation="horizontal" >
-
-<EditText
-    android:id="@+id/txtSearch"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="5dip"
-    android:layout_marginLeft="30dip"
-    android:layout_marginRight="15dip"
-    android:layout_marginTop="5dip"
-    android:layout_weight="1"
-    android:background="@color/base_chatter_view_background"
-    android:gravity="center_vertical"
-    android:hint="Order code"
-    android:imeOptions="actionSearch"
-    android:inputType="textNoSuggestions" >
-</EditText>
+    android:layout_height="35dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
 
-<ImageButton
-    android:id="@+id/btnClear"
-    android:layout_width="16dip"
-    android:layout_height="16dip"
-    android:layout_margin="8dp"
-    android:background="@android:color/transparent"
-    android:layout_gravity="center_vertical"
-    android:scaleType="fitXY"
-    android:visibility="gone"
-    android:src="@drawable/ic_action_search" />
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login_signup_control_bg"
+        android:fontFamily="@string/font_light"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_small"
+        android:hint="Order code"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColorHint="@color/body_text_1" />
+
+    <ImageButton
+        android:id="@+id/btnClear"
+        android:layout_width="35dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_search"
+        android:visibility="visible" />
 
 </LinearLayout>
