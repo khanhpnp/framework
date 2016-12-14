@@ -1,2 +1,2 @@
 <menu xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.myapp.view.activities.Register"></menu>
+    tools:context="myapp.com.view.activities.Register"></menu>

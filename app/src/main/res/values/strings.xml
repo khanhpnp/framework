@@ -31,4 +31,6 @@
     <string name="menu_night_mode_day">Day (always)</string>
     <string name="menu_night_mode_night">Night (always)</string>
     <string name="menu_night_mode_auto">Auto</string>
+
+    <string name="order_info"> Customer Name : Kenny Pham\r\n Mobile Phone     : +840931308994\r\n Total Price          :  3,040.00 $\r\n Address              : Thoi An, District 12, Ho Chi Minh City </string>
 </resources>

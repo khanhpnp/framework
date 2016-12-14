@@ -1,4 +1,4 @@
-package com.myapp.view.activities;
+package myapp.com.view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.cheesesquare.ShippingActivity;
 import com.odoo.App;
 import com.odoo.R;
 

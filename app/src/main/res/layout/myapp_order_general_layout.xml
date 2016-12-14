@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/red_conner_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="#ORDER ID :"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/drawer_background"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:text="1601972846018"
+            android:textColor="@color/drawer_background"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/while_top_conner_bg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:text="Customer Name"
+            android:layout_width="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:lines="1"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text=":"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text="Khanh Pham"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:background="@color/drawer_background"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:text="Mobile"
+            android:layout_width="110dp"
+            android:lines="1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text=":"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_marginBottom="3dp"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text="+840931308994"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/drawer_background"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:text="Total Prices"
+            android:layout_width="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text=":"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+        <TextView
+            android:text="3,040.00 $"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:gravity="left|center_vertical"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:background="@drawable/while_bottom_conner_bg"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:text="Address"
+            android:layout_width="110dp"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|top"/>
+        <TextView
+            android:text=":"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:gravity="left|top"/>
+        <TextView
+            android:text="266/16 TA28 Thoi An Wards, District 12, Ho Chi Minh City "
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:gravity="left|top"/>
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/red_conner_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="#ORDER DETAILS :"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/drawer_background"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+</LinearLayout>

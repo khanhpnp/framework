@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cheesesquare;
+package myapp.com;
 
 import com.odoo.R;
 

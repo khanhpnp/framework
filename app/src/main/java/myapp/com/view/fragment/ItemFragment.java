@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cheesesquare;
+package myapp.com.view.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -37,13 +37,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RefundFragment extends Fragment {
+import myapp.com.Cheeses;
+import myapp.com.view.activities.CheeseDetailActivity;
+
+public class ItemFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rv = inflater.inflate(R.layout.cheesesquare_fragment_cheese_list, container, false);
-        setupRecyclerView((RecyclerView) rv.findViewById((R.id.recyclerview)));
+        View rv = inflater.inflate(R.layout.myapp_item_layout, container, false);
+        //setupRecyclerView((RecyclerView) rv.findViewById((R.id.recyclerview)));
         return rv;
     }
 

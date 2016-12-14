@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cheesesquare;
+package myapp.com.view.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +28,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -38,7 +37,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class OrderFragment extends Fragment {
+import myapp.com.Cheeses;
+import myapp.com.view.activities.CheeseDetailActivity;
+
+public class RefundFragment extends Fragment {
 
     @Nullable
     @Override

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cheesesquare;
+package myapp.com.view.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,13 +22,12 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.odoo.R;
 
-import java.util.Random;
+import myapp.com.Cheeses;
 
 public class CheeseDetailActivity extends AppCompatActivity {
 

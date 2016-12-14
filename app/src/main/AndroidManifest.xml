@@ -29,7 +29,7 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.myapp.view.activities.Register"
+            android:name="myapp.com.view.activities.Register"
             android:label="${applicationName}"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -60,13 +60,13 @@
         <activity android:name="com.odoo.core.account.About" />
         <activity android:name="com.odoo.core.account.Profile" />
 
-        <activity android:name="com.cheesesquare.CheeseDetailActivity"
-            android:parentActivityName="com.cheesesquare.ShippingActivity">
+        <activity android:name="myapp.com.view.activities.CheeseDetailActivity"
+            android:parentActivityName="myapp.com.view.activities.ShippingActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cheesesquare.ShippingActivity" />
+                android:value="myapp.com.view.activities.ShippingActivity" />
         </activity>
 
-        <activity android:name="com.cheesesquare.ShippingActivity"/>
+        <activity android:name="myapp.com.view.activities.ShippingActivity"/>
 
         <!-- Reminder Receivers// -->
         <receiver android:name="com.odoo.core.utils.reminder.ReminderReceiver" />
